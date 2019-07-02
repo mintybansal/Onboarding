@@ -17,7 +17,7 @@ namespace Mars.StepDefintions
         public void GivenIClickedOnTheLanguagesTabUnderProfilePage()
         {
             //wait
-            Thread.Sleep(1500);
+            Thread.Sleep(2000);
 
             // Click on language tab
             Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[1]/div/a[2]")).Click();
@@ -100,6 +100,7 @@ namespace Mars.StepDefintions
         public void WhenIClickedOnDeleteIcon()
         {
 
+            languageObj = new ProfilePage();
             languageObj.DelLanguage();
         }
 
