@@ -114,6 +114,7 @@
     <Compile Include="Helpers\ExcelData.cs" />
     <Compile Include="Helpers\LoginPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Page\ProfilePage.cs" />
     <Compile Include="StepDefintions\ProfileFeatureSteps.cs" />
     <Compile Include="Utils\Start.cs" />
   </ItemGroup>
