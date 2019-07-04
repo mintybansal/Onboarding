@@ -51,7 +51,7 @@ namespace Mars.StepDefintions
                 //Start the Reports
                 CommonMethods.ExtentReports();
                 Thread.Sleep(1000);
-                CommonMethods.test = CommonMethods.extent.StartTest("Add a Language");
+                CommonMethods.Test = CommonMethods.Extent.StartTest("Add a Language");
 
                 Thread.Sleep(1000);
                 string expectedValue = language;
@@ -63,7 +63,7 @@ namespace Mars.StepDefintions
 
                     if (expectedValue == actualValue)
                     {
-                        CommonMethods.test.Log(LogStatus.Pass, "Test Passed, Added a Language Successfully");
+                        CommonMethods.Test.Log(LogStatus.Pass, "Test Passed, Added a Language Successfully");
                         SaveScreenShotClass.SaveScreenshot(Driver.driver, "LanguageAdded");
                         return;
                     }
@@ -73,7 +73,7 @@ namespace Mars.StepDefintions
             }
             catch (Exception e)
             {
-                CommonMethods.test.Log(LogStatus.Fail, "Test Failed", e.Message);
+                CommonMethods.Test.Log(LogStatus.Fail, "Test Failed", e.Message);
             }
 
         }
