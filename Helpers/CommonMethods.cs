@@ -36,15 +36,15 @@ namespace Mars.Helpers
         }
         //ExtentReports
         #region reports
-        public static ExtentTest test;
-        public static ExtentReports extent;
+        public static ExtentTest Test;
+        public static ExtentReports Extent;
 
 
 
         public static void ExtentReports()
         {
-            extent = new ExtentReports(ConstantHelpers.ReportsPath, true, DisplayOrder.NewestFirst);
-            extent.LoadConfig(ConstantHelpers.ReportXMLPath);
+            Extent = new ExtentReports(ConstantHelpers.ReportsPath, true, DisplayOrder.NewestFirst);
+            Extent.LoadConfig(ConstantHelpers.ReportXMLPath);
         }
     }
     #endregion
